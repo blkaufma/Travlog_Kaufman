@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel.png" translatesAutoresizingMaskIntoConstraints="NO" id="LKp-Li-xCG">
+                                <rect key="frame" x="91" y="-13" width="419" height="321"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="321" id="dIx-cR-q9p"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uvmTower.bmp" translatesAutoresizingMaskIntoConstraints="NO" id="00e-cP-4Yk">
+                                <rect key="frame" x="95" y="361" width="410" height="219"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TravLog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOY-l7-5vz">
+                                <rect key="frame" x="217" y="301" width="166" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="m7J-D2-rpp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LKp-Li-xCG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8sf-9u-Mbq"/>
+                            <constraint firstItem="LKp-Li-xCG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="71" id="Bb5-UL-vre"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="qOY-l7-5vz" secondAttribute="bottom" constant="218" id="OmL-cx-xAq"/>
+                            <constraint firstItem="LKp-Li-xCG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-13" id="PPe-kr-KSq"/>
+                            <constraint firstItem="qOY-l7-5vz" firstAttribute="centerX" secondItem="00e-cP-4Yk" secondAttribute="centerX" id="QRz-zd-YEW"/>
+                            <constraint firstItem="00e-cP-4Yk" firstAttribute="top" secondItem="LKp-Li-xCG" secondAttribute="bottom" constant="53" id="Zlg-n3-3TX"/>
+                            <constraint firstAttribute="bottom" secondItem="00e-cP-4Yk" secondAttribute="bottom" constant="20" symbolic="YES" id="gYY-0i-lkp"/>
+                            <constraint firstItem="qOY-l7-5vz" firstAttribute="top" secondItem="LKp-Li-xCG" secondAttribute="bottom" constant="8" symbolic="YES" id="okH-I7-F0W"/>
+                            <constraint firstItem="00e-cP-4Yk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="75" id="rrI-AF-CH5"/>
+                            <constraint firstItem="00e-cP-4Yk" firstAttribute="centerX" secondItem="LKp-Li-xCG" secondAttribute="centerX" id="yqg-o9-jt2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="travel.png" width="512" height="512"/>
+        <image name="uvmTower.bmp" width="527" height="635"/>
+    </resources>
+</document>

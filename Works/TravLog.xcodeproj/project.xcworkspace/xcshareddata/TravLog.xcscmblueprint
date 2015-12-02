@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F2707A58ACC4243EA8F611DD14E36CF0E229D054",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CAF048328B5FAD5B23ADCDC47B04DF6F36C81CB8" : 0,
+    "F2707A58ACC4243EA8F611DD14E36CF0E229D054" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A337AD4F-7F39-4B9B-AA49-5C12D4912C3C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CAF048328B5FAD5B23ADCDC47B04DF6F36C81CB8" : "imgs\/",
+    "F2707A58ACC4243EA8F611DD14E36CF0E229D054" : "275_travel_app\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TravLog",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TravLog.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/blkaufma\/imgs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CAF048328B5FAD5B23ADCDC47B04DF6F36C81CB8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IanPFoertsch\/275_travel_app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2707A58ACC4243EA8F611DD14E36CF0E229D054"
+    }
+  ]
+}

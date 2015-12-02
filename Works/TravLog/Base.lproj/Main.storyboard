@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vb3-bs-lvF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iG5-KT-KxK">
+                                <rect key="frame" x="107" y="215" width="200" height="349"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2X-lt-fyc">
+                                        <rect key="frame" x="38" y="0.0" width="124" height="34"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for participating in the University of Vermont's Travel survey" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-oX-mPp">
+                                        <rect key="frame" x="4" y="46" width="193" height="51"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGB-7N-QTL">
+                                        <rect key="frame" x="72" y="109" width="57" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Register"/>
+                                        <connections>
+                                            <segue destination="VH7-es-VRZ" kind="show" id="KMq-cW-gmr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDE-Kx-pmQ">
+                                        <rect key="frame" x="77" y="151" width="47" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <segue destination="GLZ-JE-sNk" kind="show" id="ZhI-6o-n39"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-lp-eQ4">
+                                        <rect key="frame" x="56" y="193" width="88" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Tell me more"/>
+                                        <connections>
+                                            <segue destination="Ogc-Yt-UiF" kind="show" id="KRU-GA-ETq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPQ-mu-kIT">
+                                        <rect key="frame" x="30" y="235" width="141" height="30"/>
+                                        <state key="normal" title="Ask the Researchers"/>
+                                        <connections>
+                                            <segue destination="7b0-Pg-nkM" kind="show" id="agc-Sn-CDI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiT-Vb-bdL">
+                                        <rect key="frame" x="76" y="277" width="48" height="30"/>
+                                        <state key="normal" title="Survey"/>
+                                        <connections>
+                                            <segue destination="gwg-sr-GKg" kind="show" id="xZ5-DW-hAb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-pQ-ZlR">
+                                        <rect key="frame" x="81" y="319" width="39" height="30"/>
+                                        <state key="normal" title="Chart"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="s96-3m-mcx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iG5-KT-KxK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OX1-OZ-2py"/>
+                            <constraint firstItem="iG5-KT-KxK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yjh-My-ykU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z7n-qH-5ev"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="285"/>
+        </scene>
+        <!--Sign In-->
+        <scene sceneID="rcw-fz-ecE">
+            <objects>
+                <viewController title="Sign In" id="GLZ-JE-sNk" customClass="SignInController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LKt-m5-Jb1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZPz-gf-MqO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IQJ-KD-wR7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V19-BJ-JAL">
+                                <rect key="frame" x="152" y="357" width="110" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cp-QG-njy">
+                                <rect key="frame" x="182" y="456" width="51" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sign In!"/>
+                                <connections>
+                                    <segue destination="nh5-r1-drx" kind="show" id="agz-cv-L3R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1cp-QG-njy" firstAttribute="centerX" secondItem="IQJ-KD-wR7" secondAttribute="centerX" id="6em-fB-7Di"/>
+                            <constraint firstItem="V19-BJ-JAL" firstAttribute="centerY" secondItem="IQJ-KD-wR7" secondAttribute="centerY" id="MGc-OD-I4R"/>
+                            <constraint firstItem="ZPz-gf-MqO" firstAttribute="top" secondItem="1cp-QG-njy" secondAttribute="bottom" constant="250" id="Wy1-sZ-UAI"/>
+                            <constraint firstItem="V19-BJ-JAL" firstAttribute="centerX" secondItem="IQJ-KD-wR7" secondAttribute="centerX" id="ta8-C6-Ord"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFc-L4-nkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="305"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="PLd-in-sLf">
+            <objects>
+                <viewController title="About" id="Ogc-Yt-UiF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bfv-VV-uI3"/>
+                        <viewControllerLayoutGuide type="bottom" id="uEC-cP-gAw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cYw-i8-R2r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-Lh-dVO">
+                                <rect key="frame" x="183" y="682" width="48" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="DOa-RO-BZj"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="I3d-hO-8Dn" kind="show" id="cFl-x1-2Ut"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The University of Vermont Transportation Research Center Studies how and why people travel long distances." textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9Rc-cp-hPz">
+                                <rect key="frame" x="197" y="72" width="197" height="136"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="But we hate asking people to fill out long surveys." textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KLJ-dQ-neA">
+                                <rect key="frame" x="20" y="216" width="235" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Luckily your phone can help! " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OtV-97-lez">
+                                <rect key="frame" x="20" y="285" width="235" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imgs/uvmTower.png" translatesAutoresizingMaskIntoConstraints="NO" id="cq7-L4-cxf">
+                                <rect key="frame" x="20" y="72" width="108" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imgs/survey.png" translatesAutoresizingMaskIntoConstraints="NO" id="xzr-2s-lst">
+                                <rect key="frame" x="263" y="216" width="131" height="92"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imgs/iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="xsu-jI-BDM">
+                                <rect key="frame" x="20" y="377" width="73" height="84"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="imgs/sattelite.png" translatesAutoresizingMaskIntoConstraints="NO" id="1S5-r4-rK3">
+                                <rect key="frame" x="81" y="314" width="100" height="99"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This app uses your phone's location sensors to detect if you're traveling, and then asks you about it." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w2e-oQ-Ztq">
+                                <rect key="frame" x="183" y="314" width="211" height="99"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="OtV-97-lez" secondAttribute="leading" id="1T5-Sd-boD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xsu-jI-BDM" secondAttribute="leading" id="4cn-iI-v7x"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xsu-jI-BDM" secondAttribute="leading" id="9Xu-jE-98W"/>
+                            <constraint firstItem="dqZ-Lh-dVO" firstAttribute="centerX" secondItem="cYw-i8-R2r" secondAttribute="centerX" id="AKo-cp-UzO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cq7-L4-cxf" secondAttribute="leading" id="Dqu-Zx-fj0"/>
+                            <constraint firstItem="w2e-oQ-Ztq" firstAttribute="top" secondItem="xzr-2s-lst" secondAttribute="bottom" constant="6" id="K1M-7T-zyd"/>
+                            <constraint firstItem="dqZ-Lh-dVO" firstAttribute="leading" secondItem="w2e-oQ-Ztq" secondAttribute="leading" id="OfF-LA-nQQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xzr-2s-lst" secondAttribute="trailing" id="RP0-c1-52E"/>
+                            <constraint firstItem="1S5-r4-rK3" firstAttribute="top" secondItem="OtV-97-lez" secondAttribute="bottom" constant="8" id="T2U-48-RhZ"/>
+                            <constraint firstItem="cq7-L4-cxf" firstAttribute="top" secondItem="bfv-VV-uI3" secondAttribute="bottom" constant="8" id="YHU-sI-9dm"/>
+                            <constraint firstItem="xzr-2s-lst" firstAttribute="top" secondItem="9Rc-cp-hPz" secondAttribute="bottom" constant="8" id="ZB0-uf-avh"/>
+                            <constraint firstItem="xsu-jI-BDM" firstAttribute="top" secondItem="OtV-97-lez" secondAttribute="bottom" constant="71" id="bnX-oR-Q6U"/>
+                            <constraint firstItem="uEC-cP-gAw" firstAttribute="top" secondItem="dqZ-Lh-dVO" secondAttribute="bottom" constant="20" id="eLp-Tv-j2F"/>
+                            <constraint firstItem="OtV-97-lez" firstAttribute="top" secondItem="KLJ-dQ-neA" secondAttribute="bottom" constant="8" id="l2w-Gz-yfW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Rc-cp-hPz" secondAttribute="trailing" id="oCT-eq-5eS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KLJ-dQ-neA" secondAttribute="leading" id="rzu-9G-fDY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w2e-oQ-Ztq" secondAttribute="trailing" id="t6m-vN-4Kj"/>
+                            <constraint firstItem="KLJ-dQ-neA" firstAttribute="top" secondItem="cq7-L4-cxf" secondAttribute="bottom" constant="16" id="ukd-1m-ATX"/>
+                            <constraint firstItem="9Rc-cp-hPz" firstAttribute="top" secondItem="bfv-VV-uI3" secondAttribute="bottom" constant="8" id="w1A-xB-x6U"/>
+                            <constraint firstItem="1S5-r4-rK3" firstAttribute="leading" secondItem="xsu-jI-BDM" secondAttribute="trailing" constant="-8" id="wl1-qs-Vdj"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxK-0E-Xzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2867" y="990"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rsw-pE-ji3">
+            <objects>
+                <viewController id="I3d-hO-8Dn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zov-LJ-79Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfY-da-UWa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9q9-qd-P92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Whenever you leave a 50 mile radius of your specified home, TravLog will give you a survey about your travels." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UNX-UY-7vU">
+                                <rect key="frame" x="20" y="93" width="221" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="NgS-AP-QeZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="221" placeholderIntrinsicHeight="74" text="After that, it won't bother you again until you return home." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-hn-Ihi">
+                                <rect key="frame" x="20" y="210" width="221" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="hK9-Uz-sDE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i08-zb-JyG">
+                                <rect key="frame" x="191" y="686" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="bRT-DZ-GIz" kind="show" id="HTw-cU-z0g"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="imgs/home.png" translatesAutoresizingMaskIntoConstraints="NO" id="j4S-2P-gIB">
+                                <rect key="frame" x="324" y="20" width="70" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Ij1-BO-KrV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="imgs/outsideGeofence.png" translatesAutoresizingMaskIntoConstraints="NO" id="oPi-HP-hL1">
+                                <rect key="frame" x="274" y="93" width="120" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="sL7-S6-SJ3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="During sign up, you choose a home location. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jGk-OE-P1D">
+                                <rect key="frame" x="20" y="20" width="197" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="EjD-oN-e76"/>
+                                    <constraint firstAttribute="width" constant="197" id="LUc-72-Zft"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="imgs/insideGeofence.png" translatesAutoresizingMaskIntoConstraints="NO" id="bpM-FC-es0">
+                                <rect key="frame" x="312" y="210" width="82" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="EOD-mO-iaU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TcQ-hn-Ihi" firstAttribute="top" secondItem="UNX-UY-7vU" secondAttribute="bottom" constant="8" symbolic="YES" id="DQ6-3k-K4e"/>
+                            <constraint firstItem="TcQ-hn-Ihi" firstAttribute="leading" secondItem="jGk-OE-P1D" secondAttribute="leading" id="Dm8-pe-u12"/>
+                            <constraint firstItem="TcQ-hn-Ihi" firstAttribute="trailing" secondItem="UNX-UY-7vU" secondAttribute="trailing" id="I8q-QT-D88"/>
+                            <constraint firstItem="TcQ-hn-Ihi" firstAttribute="leading" secondItem="UNX-UY-7vU" secondAttribute="leading" id="Nd0-9m-XIa"/>
+                            <constraint firstItem="TcQ-hn-Ihi" firstAttribute="leading" secondItem="9q9-qd-P92" secondAttribute="leadingMargin" id="UUR-2X-NKV"/>
+                            <constraint firstItem="TcQ-hn-Ihi" firstAttribute="top" secondItem="9q9-qd-P92" secondAttribute="top" constant="210" id="WgL-bm-kMg"/>
+                            <constraint firstItem="jGk-OE-P1D" firstAttribute="top" secondItem="zov-LJ-79Q" secondAttribute="bottom" id="g18-A0-8QO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCn-dL-4h3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3383" y="990"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DQD-0T-idT">
+            <objects>
+                <viewController id="bRT-DZ-GIz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a4I-Un-7If"/>
+                        <viewControllerLayoutGuide type="bottom" id="XwG-OS-4iR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JiE-ey-sOc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We will use the aggregated responses to study how often people are travelling, by what modes, and for what reasons." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="gEO-mW-zTg">
+                                <rect key="frame" x="164" y="252" width="230" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="i4j-aR-k4R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your participtation!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gak-6W-GuD">
+                                <rect key="frame" x="20" y="517" width="374" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="mDA-Yy-uDG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8h-jo-Mfw">
+                                <rect key="frame" x="189" y="686" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dBM-gL-WtR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="At the end of the month, we will tell you how many long distance trips you made and what modes you used for these travels." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="J2j-Hh-2bG">
+                                <rect key="frame" x="20" y="72" width="244" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="gLS-9u-lpf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J2j-Hh-2bG" firstAttribute="top" secondItem="a4I-Un-7If" secondAttribute="bottom" constant="8" symbolic="YES" id="6Tk-iU-uqB"/>
+                            <constraint firstAttribute="bottom" secondItem="y8h-jo-Mfw" secondAttribute="bottom" constant="20" symbolic="YES" id="JPY-6n-52H"/>
+                            <constraint firstItem="Gak-6W-GuD" firstAttribute="trailing" secondItem="gEO-mW-zTg" secondAttribute="trailing" id="N9v-Ke-wt2"/>
+                            <constraint firstItem="J2j-Hh-2bG" firstAttribute="leading" secondItem="JiE-ey-sOc" secondAttribute="leadingMargin" id="Vhj-sv-NIF"/>
+                            <constraint firstItem="gEO-mW-zTg" firstAttribute="top" secondItem="J2j-Hh-2bG" secondAttribute="bottom" constant="4" id="apQ-eP-D3j"/>
+                            <constraint firstItem="y8h-jo-Mfw" firstAttribute="top" secondItem="Gak-6W-GuD" secondAttribute="bottom" constant="25" id="i4N-VZ-87t"/>
+                            <constraint firstItem="y8h-jo-Mfw" firstAttribute="centerX" secondItem="Gak-6W-GuD" secondAttribute="centerX" id="tGw-8c-D0f"/>
+                            <constraint firstItem="gEO-mW-zTg" firstAttribute="trailing" secondItem="JiE-ey-sOc" secondAttribute="trailingMargin" id="xjE-B4-Rge"/>
+                            <constraint firstItem="Gak-6W-GuD" firstAttribute="leading" secondItem="J2j-Hh-2bG" secondAttribute="leading" id="zZO-hg-wlP"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96v-x4-num" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3866" y="990"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="PlL-mW-GIT">
+            <objects>
+                <viewController title="Register" id="VH7-es-VRZ" customClass="RegisterController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wvM-hE-eaU"/>
+                        <viewControllerLayoutGuide type="bottom" id="OtM-RK-nad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U9e-J6-5pd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register Scene" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-Oq-Bov">
+                                <rect key="frame" x="149" y="357" width="116" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwi-e7-VCI">
+                                <rect key="frame" x="177" y="300" width="61" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Register!"/>
+                                <connections>
+                                    <segue destination="yKB-kE-a8B" kind="show" id="OdP-Dz-IvF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bwi-e7-VCI" firstAttribute="top" secondItem="U9e-J6-5pd" secondAttribute="top" constant="300" id="C8h-qn-gRJ"/>
+                            <constraint firstItem="bwi-e7-VCI" firstAttribute="centerX" secondItem="U9e-J6-5pd" secondAttribute="centerX" id="fVM-GI-b2k"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dX-NJ-bpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="-633"/>
+        </scene>
+        <!--Terms & Conditions-->
+        <scene sceneID="wfg-d6-Nu8">
+            <objects>
+                <viewController title="Terms &amp; Conditions" id="yKB-kE-a8B" customClass="RegisterController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hlf-fb-kPC"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ll-6U-Pdt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DEH-V6-UbG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jP-hq-8Ei">
+                                <rect key="frame" x="88" y="462" width="73" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="9qk-1d-rHQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAK-77-JNL">
+                                <rect key="frame" x="244" y="462" width="83" height="30"/>
+                                <animations/>
+                                <state key="normal" title="I Agree"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6L-cT-TKd">
+                                <rect key="frame" x="132" y="358" width="151" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z6L-cT-TKd" firstAttribute="centerY" secondItem="DEH-V6-UbG" secondAttribute="centerY" id="9BG-Hs-psS"/>
+                            <constraint firstItem="Z6L-cT-TKd" firstAttribute="centerX" secondItem="DEH-V6-UbG" secondAttribute="centerX" id="Pu0-iC-tXh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4a-0Z-wY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3108" y="-633"/>
+        </scene>
+        <!--Initial Controller-->
+        <scene sceneID="4hi-SQ-2eb">
+            <objects>
+                <navigationController title="Initial Controller" automaticallyAdjustsScrollViewInsets="NO" id="vb3-bs-lvF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="16o-wQ-YzW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="liz-Si-82D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMI-7i-1Yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="285"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="lYo-PQ-gYj">
+            <objects>
+                <navigationController title="Home Controller" id="nh5-r1-drx" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W0p-e6-B9w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gGX-bt-7ut" kind="relationship" relationship="rootViewController" id="jnh-36-EBS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XuA-xh-VPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="2656"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fxH-Wg-7da">
+            <objects>
+                <viewController title="Home" id="gGX-bt-7ut" customClass="HomeController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KMm-CY-X9y"/>
+                        <viewControllerLayoutGuide type="bottom" id="lyY-iB-7Qa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vvp-u4-SDd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="k3o-zZ-hqI">
+                                <rect key="frame" x="107" y="288" width="200" height="160"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You traveled as far as Saturn in the last 90 days!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rug-DW-MFU">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7R-lh-8mN">
+                                        <rect key="frame" x="43" y="46" width="115" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Survey Waiting..."/>
+                                        <connections>
+                                            <segue destination="gwg-sr-GKg" kind="show" id="Vhe-dY-1sv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-X1-P4s">
+                                        <rect key="frame" x="15" y="88" width="170" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Contact the Researchers"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cer-ns-Azy">
+                                        <rect key="frame" x="41" y="130" width="119" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="About the Survey"/>
+                                        <connections>
+                                            <segue destination="Ogc-Yt-UiF" kind="show" id="bCM-Of-8qQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1JO-HP-IMY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k3o-zZ-hqI" firstAttribute="centerX" secondItem="vvp-u4-SDd" secondAttribute="centerX" id="DaM-Vf-86i"/>
+                            <constraint firstItem="k3o-zZ-hqI" firstAttribute="centerY" secondItem="vvp-u4-SDd" secondAttribute="centerY" id="bZ6-f3-d5Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GiJ-Nm-ETz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0G-Nj-8pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="2656"/>
+        </scene>
+        <!--Survey-->
+        <scene sceneID="AZM-z5-YCd">
+            <objects>
+                <viewController title="Survey" id="gwg-sr-GKg" customClass="SurveyController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Ue-ja-0pB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGF-7t-CDz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AWc-gb-FAz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9sy-Be-eWw">
+                                <rect key="frame" x="132" y="20" width="150" height="21"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czF-wm-kOD">
+                                <rect key="frame" x="20" y="237" width="128" height="128"/>
+                                <state key="normal" title="Train" image="imgs/train.png"/>
+                                <connections>
+                                    <action selector="buttonTrain:" destination="gwg-sr-GKg" eventType="touchUpInside" id="S7E-8E-9qt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q88-dA-bhq">
+                                <rect key="frame" x="154" y="237" width="128" height="128"/>
+                                <state key="normal" title="Other" image="imgs/ufo.png"/>
+                                <connections>
+                                    <action selector="buttonOther:" destination="gwg-sr-GKg" eventType="touchUpInside" id="HC8-yZ-Lee"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Travel Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-ch-wLQ">
+                                <rect key="frame" x="160" y="657" width="94" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-hy-k6W">
+                                <rect key="frame" x="183" y="686" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="buttonSubmit:" destination="gwg-sr-GKg" eventType="touchUpInside" id="cIn-a9-Hir"/>
+                                    <segue destination="gGX-bt-7ut" kind="show" id="38D-EZ-RIM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-8J-69X">
+                                <rect key="frame" x="20" y="101" width="128" height="128"/>
+                                <state key="normal" title="Plane" image="imgs/airplane-6.png"/>
+                                <connections>
+                                    <action selector="buttonPlane:" destination="gwg-sr-GKg" eventType="touchUpInside" id="eEk-oC-Vms"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIi-NC-kAQ">
+                                <rect key="frame" x="154" y="101" width="128" height="128"/>
+                                <state key="normal" title="Bus" image="img/bus.png"/>
+                                <connections>
+                                    <action selector="buttonBus:" destination="gwg-sr-GKg" eventType="touchUpInside" id="y2U-KD-u0W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How did you travel?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-Aw-So1">
+                                <rect key="frame" x="132" y="72" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLM-Rf-RF0">
+                                <rect key="frame" x="20" y="619" width="374" height="30"/>
+                                <state key="normal" title="I didn't travel"/>
+                                <connections>
+                                    <action selector="buttonDidntTravel:" destination="gwg-sr-GKg" eventType="touchUpInside" id="gMo-3c-EmE"/>
+                                    <segue destination="gGX-bt-7ut" kind="show" id="YTy-8N-iGF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUD-bn-aqE">
+                                <rect key="frame" x="20" y="373" width="128" height="128"/>
+                                <state key="normal" title="Car" image="imgs/ufo.png"/>
+                                <connections>
+                                    <action selector="buttonCar:" destination="gwg-sr-GKg" eventType="touchUpInside" id="ebI-48-oUX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YVV-hy-k6W" firstAttribute="top" secondItem="WA9-ch-wLQ" secondAttribute="bottom" constant="8" id="V6N-6F-XMo"/>
+                            <constraint firstItem="cGF-7t-CDz" firstAttribute="top" secondItem="YVV-hy-k6W" secondAttribute="bottom" constant="20" id="pMh-FY-eud"/>
+                            <constraint firstItem="WA9-ch-wLQ" firstAttribute="top" secondItem="LLM-Rf-RF0" secondAttribute="bottom" constant="8" id="qhc-8R-2jg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="labelMode" destination="WA9-ch-wLQ" id="LoX-Zp-AID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taT-SB-s7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2439" y="2318"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="Nvm-6N-Vv2">
+            <objects>
+                <viewController title="Contact" id="7b0-Pg-nkM" customClass="ContactController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t9H-aQ-sJH"/>
+                        <viewControllerLayoutGuide type="bottom" id="f4z-2e-EUc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kNz-Jk-gwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Have a question for the research staff?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBy-hK-zcc">
+                                <rect key="frame" x="32" y="106" width="369" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1m-ST-Z9Q">
+                                <rect key="frame" x="178" y="144" width="76" height="30"/>
+                                <state key="normal" title="Send Email"/>
+                                <connections>
+                                    <action selector="SendEmail:" destination="7b0-Pg-nkM" eventType="touchUpInside" id="Qhc-py-O4z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QBy-hK-zcc" firstAttribute="centerX" secondItem="kNz-Jk-gwJ" secondAttribute="centerX" id="Bzj-Fl-JIC"/>
+                            <constraint firstItem="QBy-hK-zcc" firstAttribute="top" secondItem="t9H-aQ-sJH" secondAttribute="bottom" id="Dko-yq-7S6"/>
+                            <constraint firstItem="H1m-ST-Z9Q" firstAttribute="top" secondItem="QBy-hK-zcc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ie4-hG-ccV"/>
+                            <constraint firstItem="QBy-hK-zcc" firstAttribute="leading" secondItem="kNz-Jk-gwJ" secondAttribute="leadingMargin" constant="3" id="S4f-li-61g"/>
+                            <constraint firstItem="H1m-ST-Z9Q" firstAttribute="centerX" secondItem="QBy-hK-zcc" secondAttribute="centerX" id="aSV-6V-8Bi"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVG-C3-b03" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2931" y="2318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img/bus.png" width="512" height="512"/>
+        <image name="imgs/airplane-6.png" width="512" height="512"/>
+        <image name="imgs/home.png" width="512" height="512"/>
+        <image name="imgs/insideGeofence.png" width="512" height="512"/>
+        <image name="imgs/iphone.png" width="512" height="512"/>
+        <image name="imgs/outsideGeofence.png" width="512" height="512"/>
+        <image name="imgs/sattelite.png" width="512" height="512"/>
+        <image name="imgs/survey.png" width="512" height="512"/>
+        <image name="imgs/train.png" width="512" height="512"/>
+        <image name="imgs/ufo.png" width="512" height="512"/>
+        <image name="imgs/uvmTower.png" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bCM-Of-8qQ"/>
+        <segue reference="YTy-8N-iGF"/>
+        <segue reference="Vhe-dY-1sv"/>
+        <segue reference="liz-Si-82D"/>
+    </inferredMetricsTieBreakers>
+</document>
